@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore breathtaking beaches with our curated gallery, showcasing natural beauty from East, West, North, and South regions.">
+    <meta name="keywords" content="beach, gallery, travel, nature, vacation, seaside">
+    <meta name="author" content="Beauty of Beaches">
+    <title>Beauty of Beaches</title>
+
+    <!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome (Latest Version) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <!-- Logo with Name -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo.png" alt="Beauty of Beaches Logo" style="height: 50px; margin-right: 10px;">
+                <span style="font-size: 1.2rem; font-weight: bold; color: #ccdac5;">Beauty of Beaches</span>
+            </a>
+            
+            <!-- Navbar toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Zones</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#north">North</a></li>
+                            <li><a class="dropdown-item" href="#east">East</a></li>
+                            <li><a class="dropdown-item" href="#west">West</a></li>
+                            <li><a class="dropdown-item" href="#south">South</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div id="visitor-counter">Visitors: 0</div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Home Section -->
+    <section id="home" class="bg-light text-center">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/1.jpg" class="d-block w-100" style="width: 500px; height: 500px;" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/2.jpg" class="d-block w-100" style="width: 500px; height: 500px;" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/3.jpg" class="d-block w-100"  style="width: 500px; height: 500px;" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+   
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="bg-dark text-center">
+        <h2><i class= "fa fa-camera-retro"></i>Gallery</h2>
+        <p>Choose a region to explore its unique beaches.</p>
+          <div class="row">
+              <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="thumbnail">
+                      <img src="images/pexels-dsnsyj-1139541.jpg" alt="East Beach 1" loading="lazy">
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="thumbnail">
+                      <img src="images/pexels-pixabay-237272.jpg" alt="East Beach 2" loading="lazy">
+                  </div>
+              </div>
+              <div class="col-lg-4 col-sm-6 mb-4">
+                  <div class="thumbnail">
+                      <img src="images/4card.jpg" alt="East Beach 3" loading="lazy">
+                  </div>
+                </div>
+                <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="thumbnail">
+                        <img src="images/pexels-dsnsyj-1139541.jpg" alt="East Beach 1" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="thumbnail">
+                        <img src="images/2card.jpg" alt="East Beach 2" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="thumbnail">
+                        <img src="images/pexels-pixabay-315998.jpg" alt="East Beach 3" loading="lazy">
+                    </div>
+                </div>
+    
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="thumbnail">
+                        <img src="images/pexels-pixabay-462162.jpg" alt="West Beach 1" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="thumbnail">
+                        <img src="images/pexels-pixabay-163872.jpg" alt="West Beach 2" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="thumbnail">
+                        <img src="images/pexels-pixabay-315998.jpg" alt="West Beach 3" loading="lazy">
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+ <!-- North Zone Section -->
+<section id="north" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <!-- Title -->
+        <h1 class="display-3 text-center animate__animated animate__flipInX mb-5" 
+            style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(5, 73, 85); 
+                   font-family: 'Matura MT Script Capitals';">
+            <b><i>North Beaches</i></b>
+        </h1>
+
+        <!-- Beach Cards -->
+        <div class="row g-4">
+            <!-- Beach 1: 1 Star -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center shadow-sm border-0">
+                    <div class="position-relative">
+                        <img src="images/pexels-dsnsyj-1139541.jpg" class="card-img-top rounded" alt="Essaouira Beach">
+                        <!-- Star Rating (1 Star) -->
+                        <div class="star-rating position-absolute top-0 end-0 p-2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="card-body bg-dark text-white">
+                        <h3 class="fs-5">Essaouira</h3>
+                        <p class="fs-6">Essaouira, a coastal city in Morocco, is famed for its medina and 18th-century seafront ramparts, blending history with stunning Atlantic views.</p>
+                        <a href="Beauty of Beaches.docx" class="btn btn-danger">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beach 2: 4.5 Stars -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center shadow-sm border-0">
+                    <div class="position-relative">
+                        <img src="images/pexels-pixabay-462162.jpg" class="card-img-top rounded" alt="North Beach 2">
+                        <!-- Star Rating (4.5 Stars) -->
+                        <div class="star-rating position-absolute top-0 end-0 p-2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-o checked"></span>
+                        </div>
+                    </div>
+                    <div class="card-body bg-dark text-white">
+                        <h3 class="fs-5">Agadir Beach</h3>
+                        <p class="fs-6">Agadir Beach offers vast golden sands and a relaxing atmosphere, ideal for families and water sports enthusiasts alike.</p>
+                        <a href="Beauty of Beaches.docx" class="btn btn-danger">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beach 3: 4.5 Stars -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center shadow-sm border-0">
+                    <div class="position-relative">
+                        <img src="images/pexels-pixabay-315998.jpg" class="card-img-top rounded" alt="North Beach 3">
+                        <!-- Star Rating (4.5 Stars) -->
+                        <div class="star-rating position-absolute top-0 end-0 p-2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-o checked"></span>
+                        </div>
+                    </div>
+                    <div class="card-body bg-dark text-white">
+                        <h3 class="fs-5">Tangier Bay</h3>
+                        <p class="fs-6">Tangier Bay combines Mediterranean charm with a lively port city, featuring pristine beaches and vibrant nightlife.</p>
+                        <a href="Beauty of Beaches.docx" class="btn btn-danger">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- East Zone Section -->
+<section id="east" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <!-- Title -->
+        <h1 class="display-3 text-center animate__animated animate__flipInX mb-5" 
+            style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(5, 73, 85); 
+                   font-family: 'Matura MT Script Capitals';">
+            <b><i>East Beaches</i></b>
+        </h1>
+
+        <!-- Beach Cards -->
+        <div class="row g-4">
+            <!-- Beach 1: 1 Star -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center shadow-sm border-0">
+                    <div class="position-relative">
+                        <img src="images/pexels-pat-whelen-2913248-5615332.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px;" class="card-img-top rounded" alt="Essaouira Beach">
+                        <!-- Star Rating (1 Star) -->
+                        <div class="star-rating position-absolute top-0 end-0 p-2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="card-body bg-dark text-white">
+                        <h3 class="fs-5">River tubing in Nigeria</h3>
+                        <p class="fs-6">River tubing is a dynamic island activity that your kids won’t be able to resist. You 
+                            can do this as a stand-alone, or combine it with some zip-lining during your visit to river Falls.
+                             During the river tubing activity.</p>
+                        <a href="Beauty of Beaches.docx" class="btn btn-danger">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beach 2: 4.5 Stars -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center shadow-sm border-0">
+                    <div class="position-relative">
+                        <img src="images/pexels-ollivves-1078983.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px;" class="card-img-top rounded" alt="East Beach 2">
+                        <!-- Star Rating (4.5 Stars) -->
+                        <div class="star-rating position-absolute top-0 end-0 p-2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-o checked"></span>
+                        </div>
+                    </div>
+                    <div class="card-body bg-dark text-white">
+                        <h3 class="fs-5">Santa Monica Beach California, USA</h3>
+                        <p class="fs-6">With its iconic pier featuring a Ferris wheel, 
+                            Santa Monica Beach blends classic coastal vibes with urban entertainment.
+                             It’s a lively spot for biking, skating, and enjoying the California sun.</p>
+                        <a href="Beauty of Beaches.docx" class="btn btn-danger">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beach 3: 4.5 Stars -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center shadow-sm border-0">
+                    <div class="position-relative">
+                        <img src="images/pexels-pok-rie-33563-168552.jpg" class="card-img-top rounded" alt="North Beach 3">
+                        <!-- Star Rating (4.5 Stars) -->
+                        <div class="star-rating position-absolute top-0 end-0 p-2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-o checked"></span>
+                        </div>
+                    </div>
+                    <div class="card-body bg-dark text-white">
+                        <h3 class="fs-5">Playa del Amor in Mexico</h3>
+                        <p class="fs-6">Accessible only by swimming or kayaking through a tunnel, this secluded beach is tucked within
+                             a crater-like formation. Its unique location makes it a bucket-list spot for adventurers.</p>
+                        <a href="Beauty of Beaches.docx" class="btn btn-danger">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- west Zone Section -->
+  <section id="west" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <!-- Title -->
+        <h1 class="display-3 text-center animate__animated animate__flipInX mb-5" 
+            style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(5, 73, 85); 
+                   font-family: 'Matura MT Script Capitals';">
+            <b><i>West Beaches</i></b>
+        </h1>
+
+        <!-- Beach Cards -->
+        <div class="row g-4">
+            <!-- Beach 1: 1 Star -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center shadow-sm border-0">
+                    <div class="position-relative">
+                        <img src="images/pexels-dsnsyj-1139541.jpg" class="card-img-top rounded" alt="Essaouira Beach">
+                        <!-- Star Rating (1 Star) -->
+                        <div class="star-rating position-absolute top-0 end-0 p-2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="card-body bg-dark text-white">
+                        <h3 class="fs-5">Maya Bay in Thailand</h3>
+                        <p class="fs-6">Made famous by the movie The Beach, Maya Bay is surrounded by towering limestone cliffs and offers
+                             azure waters ideal for snorkeling and photography. A tropical gem for nature lovers.</p>
+                        <a href="Beauty of Beaches.docx" class="btn btn-danger">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beach 2: 4.5 Stars -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center shadow-sm border-0">
+                    <div class="position-relative">
+                        <img src="images/pexels-pixabay-462162.jpg" class="card-img-top rounded" alt="North Beach 2">
+                        <!-- Star Rating (4.5 Stars) -->
+                        <div class="star-rating position-absolute top-0 end-0 p-2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-o checked"></span>
+                        </div>
+                    </div>
+                    <div class="card-body bg-dark text-white">
+                        <h3 class="fs-5">Karekare Beach in New York</h3>
+                        <p class="fs-6">Karekare is one of Auckland's most magnificent beaches, 
+                            its isolation adding to its stunning natural beauty. Part of the Waitākere Ranges
+                             Regional Park, Karekare was made famous by the Oscar-winning movie The Piano.</p>
+                        <a href="Beauty of Beaches.docx" class="btn btn-danger">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beach 3: 4.5 Stars -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center shadow-sm border-0">
+                    <div class="position-relative">
+                        <img src="images/pexels-pixabay-315998.jpg" class="card-img-top rounded" alt="North Beach 3">
+                        <!-- Star Rating (4.5 Stars) -->
+                        <div class="star-rating position-absolute top-0 end-0 p-2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-o checked"></span>
+                        </div>
+                    </div>
+                    <div class="card-body bg-dark text-white">
+                        <h3 class="fs-5">Piha Beach in Brazil/h3>
+                        <p class="fs-6">Piha is popular with experienced surfers, but it’s also a
+                            wonderful spot for picnics, relaxing walks and swims – under the watchful eye 
+                            of the famous Piha Surf Club. See Lion Rock, a small island that stands in 
+                            the middle of the beach.</p>
+                        <a href="Beauty of Beaches.docx" class="btn btn-danger">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- South Zone Section -->
+  <section id="south" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <!-- Title -->
+        <h1 class="display-3 text-center animate__animated animate__flipInX mb-5" 
+            style="color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(5, 73, 85); 
+                   font-family: 'Matura MT Script Capitals';">
+            <b><i>South Beaches</i></b>
+        </h1>
+
+        <!-- Beach Cards -->
+        <div class="row g-4">
+            <!-- Beach 1: 1 Star -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center shadow-sm border-0">
+                    <div class="position-relative">
+                        <img src="images/pexels-raybilcliff-7553594.jpg" class="card-img-top rounded" alt="Essaouira Beach">
+                        <!-- Star Rating (1 Star) -->
+                        <div class="star-rating position-absolute top-0 end-0 p-2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </div>
+                    <div class="card-body bg-dark text-white">
+                        <h3 class="fs-5">Mt Maunganui Beach in India</h3>
+
+                        <p class="fs-6">Mt Maunganui Beach is located in the North Island of New Zealand.
+                            It is within the Bay 
+                           of Plenty region and is well known as one of the countries favourite beaches.</p>
+                        <a href="Beauty of Beaches.docx" class="btn btn-danger">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beach 2: 4.5 Stars -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center shadow-sm border-0">
+                    <div class="position-relative">
+                        <img src="images/5card.webp" class="card-img-top rounded" alt="North Beach 2">
+                        <!-- Star Rating (4.5 Stars) -->
+                        <div class="star-rating position-absolute top-0 end-0 p-2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-o checked"></span>
+                        </div>
+                    </div>
+                    <div class="card-body bg-dark text-white">
+                        <h3 class="fs-5">Race Point Beach in Tokyo </h3>
+                        <p class="fs-6">The grass covered sand dunes leading to race point beach on the cape 
+                            cod national seashore Race Point Beach offers amazing.</p>
+                        <a href="Beauty of Beaches.docx" class="btn btn-danger">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beach 3: 4.5 Stars -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center shadow-sm border-0">
+                    <div class="position-relative">
+                        <img src="images/6card.jfif" class="card-img-top rounded" alt="South Beach 3">
+                        <!-- Star Rating (4.5 Stars) -->
+                        <div class="star-rating position-absolute top-0 end-0 p-2">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-o checked"></span>
+                        </div>
+                    </div>
+                    <div class="card-body bg-dark text-white">
+                        <h3 class="fs-5">Tybee Island in Saudi</h3>
+                        <p class="fs-6">Tybee Island is a barrier island and small city near Savannah,
+                            Georgia. It’s known for its wide, sandy beaches, including South Beach, with a pier and 
+                            pavilion.</p>
+                        <a href="Beauty of Beaches.docx" class="btn btn-danger">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<main id="main-content">
+ </main>
+
+
+   <!-- About Us Section -->
+<section id="about" class="bg-about text-center text-white py-5" style="background-image: url('/images/pexels-raybilcliff-21036209.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+        <h2 class="display-4 mb-4" style="font-family: 'Matura MT Script Capitals', cursive; color: #40df0f;">About Us</h2>
+        <p class="lead fs-4 mb-4">We bring people closer to nature through curated beach destinations, providing the best locations to relax and rejuvenate.</p>
+        <p class="fs-5 mb-4">Our mission is to create unforgettable beach experiences that are both beautiful and sustainable, making sure our visitors enjoy the serenity of nature. Join us on a journey to discover some of the most breathtaking beaches in the world.</p>
+        
+        <!-- Call to Action Button -->
+        <a href="#contact" class="btn btn-warning btn-lg">Contact Us</a>
+    </div>
+</section>
+
+<section id="contact" class="bg-light text-center py-5">
+    <div class="container">
+        <h2 class="display-4 mb-4" style="font-family: 'Matura MT Script Capitals', cursive; color: #3bac06;">Meet Our Team</h2>
+        
+        <!-- Contact Team Members -->
+        <div class="row">
+            <!-- Director, PR & Communication -->
+            <div class="col-md-3 mb-4">
+                <section class="contact-item">
+                    <img src="images/pic4.png" alt="Mohammed Abdulmalik" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                    <h4 class="text-primary">Director, PR & Communication</h4>
+                    <h5>Mohammed Abdulmalik</h5>
+                    <h6>
+                        <a href="mailto:Mohammed.Abdulmalik@beautyofbeaches.com" class="text-decoration-none" aria-label="Email Mohammed Abdulmalik">
+                            Mohammed.Abdulmalik@beautyofbeaches.com
+                        </a>
+                    </h6>
+                </section>
+            </div>
+
+            <!-- Partnerships Manager -->
+            <div class="col-md-3 mb-4">
+                <section class="contact-item">
+                    <img src="images/pic2.png" alt="Michael Peter" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                    <h4 class="text-primary">Partnerships Manager</h4>
+                    <h5>Michael Peter</h5>
+                    <h6>
+                        <a href="mailto:Michael.Peter@beautyofbeaches.com" class="text-decoration-none" aria-label="Email Michael Peter">
+                            Michael.Peter@beautyofbeaches.com
+                        </a>
+                    </h6>
+                </section>
+            </div>
+
+            <!-- Director of Contact -->
+            <div class="col-md-3 mb-4">
+                <section class="contact-item">
+                    <img src="images/pic3.png" alt="Goodness Ooreoluwa" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                    <h4 class="text-primary">Director of Contact</h4>
+                    <h5>Goodness Ooreoluwa</h5>
+                    <h6>
+                        <a href="mailto:Goodness.Ooreoluwa@beautyofbeaches.com" class="text-decoration-none" aria-label="Email Goodness Ooreoluwa">
+                            Goodness.Ooreoluwa@beautyofbeaches.com
+                        </a>
+                    </h6>
+                </section>
+            </div>
+
+            <!-- Other Inquiries -->
+            <div class="col-md-3 mb-4">
+                <section class="contact-item">
+                    <img src="images/pic1.png" alt="" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                    <h4 class="text-primary">Other Inquiries</h4>
+                    <h5>Quazeem Ayodeji</h5>
+                    <h6>
+                        <a href="mailto:Quazeem.Ayodeji@beautyofbeaches.com" class="text-decoration-none" aria-label="Email Quazeem Ayodeji">
+                            Quazeem.Ayodeji@beautyofbeaches.com
+                        </a>
+                    </h6>
+                </section>
+            </div>
+        </div>
+
+        <!-- Thank You Message -->
+        <p class="fs-5 mt-4">Thank you for visiting Beauty Of Beaches. We hope you enjoy exploring the world's most beautiful beaches with us!</p>
+    </div>
+</section>
+<div class="container-fluid text-center bg-dark text-light">
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <div id="date" class="mb-3">Date: </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div id="time" class="mb-3">Time: </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div id="location" class="mb-3">Location: </div>
+        </div>
+    </div>
+  </div>
+
+
+    
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+      <!-- Floating Advertisement Tab -->
+      <div class="floating-image" onclick="toggleMenu()" aria-hidden="true">
+          <i class="fa fa-ad"></i> <!-- Example icon -->
+      </div>
+      <div class="floating-menu" id="menu">
+          <button class="menu-button" onclick="window.open('https://www.skyscanner.net', '_blank')">Flights</button>
+          <button class="menu-button" onclick="window.open('https://www.omio.com/buses', '_blank')">Bus</button>
+          <button class="menu-button" onclick="window.open('https://www.booking.com', '_blank')">Hotel</button>
+          <button class="menu-button" onclick="window.open('https://www.weather.com', '_blank')">Weather</button>
+          <button class="menu-button" onclick="window.open('https://www.tripadvisor.com', '_blank')">Trip Advisor</button>
+          <button class="menu-button" onclick="window.open('https://www.expedia.com', '_blank')">Trip Planner</button>
+      </div>
+  
+      <!-- Footer Content -->
+      <div class="footer-container d-flex justify-content-between container mt-4">
+          <div class="footer-left">
+              <p class="footer-social-follow">Follow Us</p>
+              <ul class="footer-social-list list-unstyled d-flex">
+                  <li><a href="https://www.instagram.com/" target="_blank" class="text-white mx-2"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.youtube.com/" target="_blank" class="text-white mx-2"><i class="fab fa-youtube"></i></a></li>
+                  <li><a href="https://www.twitter.com/" target="_blank" class="text-white mx-2"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.facebook.com/" target="_blank" class="text-white mx-2"><i class="fab fa-facebook"></i></a></li>
+              </ul>
+          </div>
+          <div class="footer-right">
+              <p>Share Your Feedback</p>
+              <form id="feedback-form">
+                  <input type="text" placeholder="First Name*" id="name" required class="form-control mb-2">
+                  <input type="email" placeholder="Email Address*" id="email" required class="form-control mb-2">
+                  <textarea placeholder="Your Feedback*" id="message" required class="form-control mb-2"></textarea>
+                  <button type="submit" class="btn btn-outline-info w-100">Submit</button>
+              </form>
+          </div>
+      </div>
+     <!-- Quick Links Section -->
+<div class="footer-links container mt-4">
+    <h5 class="text-center text-white">Quick Links</h5>
+    <div class="d-flex justify-content-center">
+        <ul class="list-unstyled d-flex">
+            <li><a href="#index" class="text-white mx-3">Home</a></li>
+            <li><a href="#gallery" class="text-white mx-3">Gallery</a></li>
+            <li><a href="#zone" class="text-white mx-3">Zone</a></li>
+            <li><a href="#query" class="text-white mx-3">Query</a></li>
+            <li><a href="#about" class="text-white mx-3">About Us</a></li>
+            <li><a href="#contact" class="text-white mx-3">Contact</a></li>
+            <li><a href="sitemap.html" class="text-white mx-3">Sitemap</a></li>
+        </ul>
+    </div>
+</div>
+      <div class="footer-bottom text-center mt-4">
+          <img src="images/logo.png" alt="Beauty of Beaches Logo" class="img-fluid" style="max-height: 30px;">
+          <p>&copy; 2024 Beauty of Beaches Inc. All Rights Reserved.</p>
+      </div>
+  
+      <div>
+          <a href="#home" class="back-to-top">Back to Top</a>
+      </div>
+  </footer>
+  
+  <!-- Bootstrap 5 Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
